@@ -16,8 +16,8 @@ def init():
     for i in range(9):
         player = Player(fake.first_name(), fake.last_name(), str(fake.date_of_birth()), "Male", i)
         serialized_player = {
-            "first_name": player.first_name,
-            "last_name": player.last_name,
+            "firstName": player.first_name,
+            "lastName": player.last_name,
             "birthdate": str(player.birthdate),
             "gender": player.gender,
             "rank": player.ranking,
@@ -27,3 +27,4 @@ def init():
 
 
 init()
+# print(players_table.all())
